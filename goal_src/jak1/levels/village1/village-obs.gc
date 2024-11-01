@@ -831,5 +831,4 @@
     (set! (-> v1-2 waveform) ripple-for-villagea-water))
   (none))
 
-(stop-main-music)
-(play-sound-file "spooky1.mp3" 30)
+

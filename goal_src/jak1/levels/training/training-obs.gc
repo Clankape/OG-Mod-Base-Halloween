@@ -754,3 +754,6 @@
   (initialize-skeleton this *scarecrow-b-sg* '())
   (go (method-of-object this idle))
   (none))
+
+
+(play-sound-file "spooky3.mp3" 30)

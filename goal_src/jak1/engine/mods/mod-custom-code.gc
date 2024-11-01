@@ -80,11 +80,11 @@
 
 (defun runs-on-jak-spawn ()
 
-    (play-main-music "spooky1.mp3" (the int (-> *setting-control* default music-volume))))
+    (process-spawn-function process music-manager-proc)
   ;; Code here runs every time jak spawns (loading a file new game or death)
   ;;uncomment this to use custom music for custom levels - the function is in mod-common-functions.gc
   ;;(process-spawn-function process music-manager-proc)
-  (none)
+  (none))
 
 (defun runs-on-jak-death ((death-event symbol))
   (case death-event
